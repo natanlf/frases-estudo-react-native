@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Container, Header, Footer, FooterTab, Left, Right, Body, Title, Button, Icon, View, Fab, List, ListItem, Thumbnail, Text, Badge, Content, Tab, Tabs, TabHeading, Card, CardItem } from 'native-base';
+import { Container, Header, Left, Right, Body, Title, Button, Icon, View, Fab, List, ListItem, Thumbnail, Text, Badge, Content, Tab, Tabs, TabHeading, Card, CardItem } from 'native-base';
 import { Image, StyleSheet } from 'react-native';
 import estilos from '../estilos/estilo'
 import Home from './Home'
@@ -26,20 +26,6 @@ export default props => (
                 </Tab>
             </Tabs>
         </View>
-
-        <Footer>
-          <FooterTab>
-            <Button>
-              <Text>Site</Text>
-            </Button>
-            <Button active>
-              <Text>Privacidade</Text>
-            </Button>
-            <Button>
-              <Text>Contato</Text>
-            </Button>
-          </FooterTab>
-        </Footer>
     </Container>
 )
 

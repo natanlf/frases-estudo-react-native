@@ -1,12 +1,19 @@
 import React, { PureComponent } from 'react'
-import { Container, CardItem, Card, Text, View } from 'native-base';
-import { FlatList } from 'react-native'
-import estilo from '../estilos/estilo'
+import { CardItem, Card, Text, View, Body, Left, Thumbnail } from 'native-base';
 
 export default class ListDeail extends PureComponent {
     render(){
         return(
-          <Card><CardItem><Text>{this.props.item.nome}</Text></CardItem></Card> 
+          <Card>
+            <CardItem>
+              <Left>
+                <Thumbnail source={{ uri: this.props.item.uri}} />
+                <Body>
+                  <Text>{this.props.item.nome}</Text>
+                </Body> 
+              </Left>    
+            </CardItem>
+          </Card> 
           
         )
     }
