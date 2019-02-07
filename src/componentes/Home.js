@@ -17,11 +17,14 @@ export default class Home extends Component {
                     <CardItem>                          
                         <Text note>{frase.autor}</Text>
                     </CardItem>
-                    <CardItem button onPress={ () => alert(frase.id) }>
+                    
+                    <CardItem style={{alignSelf:'flex-end'}}>
                         <Right>
-                            <Icon type="FontAwesome" name="share-alt" />
+                            <Icon button onPress={ () => alert(frase.id) } type="FontAwesome" name="share-alt" />
                         </Right>      
                     </CardItem>
+                    
+                    
                 </Card>))}
             </Content>
         )

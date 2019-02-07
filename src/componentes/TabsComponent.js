@@ -3,6 +3,7 @@ import { Container, Header, Footer, FooterTab, Left, Right, Body, Title, Button,
 import { Image, StyleSheet } from 'react-native';
 import estilos from '../estilos/estilo'
 import Home from './Home'
+import Autor from './Autor'
 
 export default props => (
     <Container>
@@ -43,4 +44,3 @@ export default props => (
 )
 
 const Categoria = () => <Text>Categoria</Text>;
-const Autor = () => <Text>Autor</Text>;
